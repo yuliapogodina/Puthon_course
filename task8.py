@@ -8,15 +8,10 @@ print("ВВедите размер шоколадки:")
 n = int(input("Долек в длину: "))
 m = int(input("Долек в ширину: "))
 k = int(input("сколько долек хотите отломить: "))
-if k<(n*m):
+if k < (n * m):
     if (k % n == 0 or k % m == 0):
         print("yes")
-    else: print("no")
-else: print("no")
-
-# if (k % n == 0 or k % m == 0):
-#     print('можно')
-# elif k > (n*m):
-#     print("нельзя")
-# else:
-#     print("нельзя")
+    else:
+        print("no")
+else:
+    print("no")
