@@ -3,8 +3,6 @@
 
 N = int(input('Введите натуральное число: '))
 i = 0
-x = 0
-while N/2 >= x:
-    x = 2**i
-    print(x)
+while N >= 2**i:
+    print(2**i)
     i += 1
