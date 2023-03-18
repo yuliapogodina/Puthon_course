@@ -7,11 +7,7 @@ m - кол-во элементов второго множества.
 
 n = int(input('кол-во элементов 1 множества: '))
 m = int(input('кол-во элементов 2 множества: '))
-x = {int(input('Число 1 набора: ')) for _ in range(0, n)}
-y = {int(input('Число 2 набора: ')) for _ in range(0, m)}
-z = x.intersection(y)
-res = []
-for i in z:
-    res.append(i)
-res.sort()
-print(res)
+x = {int(input(f'{i+1}-й элемент 1-го множества: ')) for i in range(0, n)}
+y = {int(input(f'{i+1}-й элемент 2-го множества: ')) for i in range(0, m)}
+z = sorted(x.intersection(y))
+print(f'Общие элементы {z}')
