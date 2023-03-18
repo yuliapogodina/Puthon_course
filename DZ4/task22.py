@@ -7,7 +7,9 @@ m - кол-во элементов второго множества.
 
 n = int(input('кол-во элементов 1 множества: '))
 m = int(input('кол-во элементов 2 множества: '))
-x = {int(input(f'{i+1}-й элемент 1-го множества: ')) for i in range(0, n)}
-y = {int(input(f'{i+1}-й элемент 2-го множества: ')) for i in range(0, m)}
+a = [int(x) for x in input('Элементы 1-го мн-ва через пробел: ').split()]
+b = [int(x) for x in input('Элементы 2-го мн-ва через пробел: ').split()]
+x = set(a[:n])
+y = set(b[:m])
 z = sorted(x.intersection(y))
 print(f'Общие элементы {z}')
