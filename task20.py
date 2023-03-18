@@ -19,7 +19,7 @@ J, X – 8 очков; Q, Z – 10 очков.
 *Пример:*
 ноутбук
     12'''
-
+import re
 alphabet_en = {
     'AEIOULNSTR': 1,
     'DG': 2,
@@ -38,8 +38,6 @@ alphabet_ru = {
     'ШЭЮ': 8,
     'ФЩЪ': 10
 }
-
-import re
 
 text = str(input('Слово: ')).upper()
 itog = 0
