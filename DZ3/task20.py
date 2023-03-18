@@ -19,7 +19,7 @@ J, X – 8 очков; Q, Z – 10 очков.
 *Пример:*
 ноутбук
     12'''
-import re
+
 alphabet = {
     'AEIOULNSTR': 1,
     'DG': 2,
