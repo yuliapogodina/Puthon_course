@@ -20,16 +20,14 @@ J, X – 8 очков; Q, Z – 10 очков.
 ноутбук
     12'''
 import re
-alphabet_en = {
+alphabet = {
     'AEIOULNSTR': 1,
     'DG': 2,
     'BCMP': 3,
     'FHVWY': 4,
     'K': 5,
     'JX': 8,
-    'QZ': 10
-}
-alphabet_ru = {
+    'QZ': 10,
     'АВЕИНОРСТ': 1,
     'ДКЛМПУ': 2,
     'БГЁЬЯ': 3,
@@ -41,10 +39,6 @@ alphabet_ru = {
 
 text = str(input('Слово: ')).upper()
 itog = 0
-if re.search('[А-Я]', text):
-    alphabet = alphabet_ru
-else:
-    alphabet = alphabet_en
 for x in text:
     for k, v in alphabet.items():
         if x in k:
