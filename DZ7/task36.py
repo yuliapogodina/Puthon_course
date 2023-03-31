@@ -17,11 +17,11 @@
 
 
 def print_operation_table(operation, num_rows, num_columns):
-    for i in range(1, num_columns + 1):
-        for j in range(1, num_rows + 1):
+    for i in range(1, num_rows + 1):
+        for j in range(1, num_columns + 1):
             print(operation(i, j), end='\t')
         print('\n')
 
 
-rows, columns = map(int, input('Введите размерность таблицы через пробел:').split(' '))
+rows, columns = map(int, input('Введите кол-во строк, столбцов через пробел:').split(' '))
 print_operation_table(lambda x, y: x * y, rows, columns)
